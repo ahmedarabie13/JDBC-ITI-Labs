@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: D4D5D9;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arabie.PrimaryController">
+   <center>
+      <VBox style="-fx-background-radius: 10; -fx-background-color: F3F4F7;" BorderPane.alignment="CENTER">
+         <children>
+
+            <GridPane alignment="CENTER" vgap="2.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="290.0" minWidth="10.0" prefWidth="143.0" />
+                <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="427.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Last Name" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <Label text="ID">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <Label text="First Name" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <Label text="Middel Name" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <Label text="Email" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <Label text="Phone" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <GaussianBlur radius="0.0">
+                           <input>
+                              <Bloom threshold="1.0" />
+                           </input>
+                        </GaussianBlur>
+                     </effect>
+                  </Label>
+                  <TextField fx:id="idTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="427.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="fNameTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="435.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="mNameTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="444.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="lNameTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="444.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="emailTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="497.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="phoneTxtFd" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="454.0" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="6.2925" width="12.1">
+                           <color>
+                              <Color red="0.4868420958518982" green="0.4395102262496948" blue="0.4395102262496948" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7105262875556946" green="0.6447368264198303" blue="0.6447368264198303" />
+               </color>
+            </DropShadow>
+         </effect>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" style="-fx-background-radius: 10; -fx-background-color: F3F4F7;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="newBtn" mnemonicParsing="false" onAction="#newBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="New" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="Update" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="Delete" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="firstBtn" mnemonicParsing="false" onAction="#firstBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="First" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="prevBtn" mnemonicParsing="false" onAction="#prevBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="Previous" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="nxtBtn" mnemonicParsing="false" onAction="#nextBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="Next" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="lastBtn" mnemonicParsing="false" onAction="#lastBtnHandler" prefWidth="70.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 7;" text="Last" textFill="#070707">
+               <FlowPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </FlowPane.margin>
+               <effect>
+                  <DropShadow height="12.11" radius="6.295" width="15.07">
+                     <color>
+                        <Color red="0.3684210479259491" green="0.35818713903427124" blue="0.35818713903427124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6578947305679321" green="0.6122075915336609" blue="0.6122075915336609" />
+               </color>
+            </DropShadow>
+         </effect>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="15.0" right="15.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </bottom>
+</BorderPane>
